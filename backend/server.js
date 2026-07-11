@@ -5,7 +5,7 @@ const path = require('path');
 const session = require('express-session');
 const passport = require('./config/passport');
 const connectDB = require('./config/db');
-const errorHandler = require('./middleware/errorMiddleware');
+
 
 dotenv.config();
 connectDB();
@@ -22,11 +22,6 @@ app.use(passport.initialize());
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-// Routes
-app.use('/api/auth', require('./routes/authRoutes'));
-app.use('/api/jobs', require('./routes/jobRoutes'));
-app.use('/api/applications', require('./routes/applicationRoutes'));
-app.use('/api/admin', require('./routes/adminRoutes'));
 
 // Health check
 app.get('/api/health', (req, res) => {
