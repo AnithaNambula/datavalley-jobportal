@@ -107,7 +107,7 @@ export default function Home() {
 
           <p className="text-lg sm:text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
             Connect with world-class employers, manage your applications in real-time,
-            and discover roles that perfectly fit your skillskkkkkkk.
+            and discover roles that perfectly fit your skills.
           </p>
 
           {/* CTAs */}
